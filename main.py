@@ -37,7 +37,7 @@ def set_wallpaper(image_path):
     subprocess.run(script, shell=True, check=True)
 
 if __name__ == "__main__":
-    prompt = "a photorealistic representation of a summary of our chatgpt history"
+    prompt = "Create a desktop wallpaper."
     image_url = generate_image(prompt)
     if image_url:
         image_name = save_image(image_url)
